@@ -10,8 +10,9 @@ import interviewRouter from "./routes/interview.route.js"
 import paymentRouter from "./routes/payment.route.js"
 
 const app = express()
+app.set("trust proxy", 1)
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin: process.env.CLIENT_URL || "http://localhost:5173",
     credentials:true
 }))
 

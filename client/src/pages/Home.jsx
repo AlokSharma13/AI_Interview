@@ -306,7 +306,7 @@ function Home() {
 
       {showAuth && <AuthModel onClose={() => setShowAuth(false)} />}
 
-        <Footer/>
+      <Footer />
 
     </div>
   )
